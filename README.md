@@ -6,7 +6,7 @@ The goals of this project are:
 
 # Quickstart
 1. Deploy to vercel
-   1. [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+   1. [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/kaziridwan/nextjs-netlifycms-starter)
 2. Copy your vercel app url from vercel dashboard, and github repo address
 3. Configure netlify-cms config
    1. goto `public/admin/config.yml`
