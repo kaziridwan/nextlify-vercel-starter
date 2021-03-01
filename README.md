@@ -17,10 +17,13 @@ We have been able to achieve a complete zero-fee system, with two lock-ins
       1. https://github.com/robinpokorny/netlify-cms-now
 2. remove github lock-in
    1. store it in gitlab
+      1. you loose codespaces for private repos
+         1. add in docker
 
 ## Roadmap
 - create a nextjs static site
-  - on gitlab
+  <!-- - on gitlab -->
+  - on github
 - move over to vercel
   - deploy on vercel
 - add netlify-cms
@@ -43,8 +46,10 @@ We have been able to achieve a complete zero-fee system, with two lock-ins
       - herosection
       - heroImage
     - blog[]
-  - add gitlab oauth to vercel
+  <!-- - add gitlab oauth to vercel -->
+  - add github oauth to vercel
     - https://github.com/robinpokorny/netlify-cms-now
 - add docker, docker-compose and scripts
   - make a dockedrepo
   - make it a monorepo
+- move to gitlab
