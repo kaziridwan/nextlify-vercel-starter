@@ -5,10 +5,32 @@ The goals of this project are:
 2. To be based off of completely opensource solutions, and no vendor lock-in
 
 # Quickstart
-1. deploy to vercel
+1. Deploy to vercel
    1. [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
-2. Configure the basics
-   1. netlify oauth
+2. Copy your vercel app url from vercel dashboard, and github repo address
+3. Configure netlify-cms config
+   1. goto `public/admin/config.yml`
+        ```
+            backend:
+            name: github
+            repo: OWNER/YOUR_GITHUB_REPO
+            base_url: https://example.com/
+            auth_endpoint: api/auth
+
+        ```
+4. [Set up netlify-cms oauth](https://www.npmjs.com/package/@openlab/vercel-netlify-cms-github)
+   1. Create a GitHub OAuth application
+      1. Go to https://github.com/settings/developers.
+      2. Set Homepage URL to your site's homepage
+      3. Set Authorization callback URL to `https://YOUR_SITE_HERE/api/callback
+      4. Make a note of your client_id and client_secret
+   2. Setup Vercel environment variables
+      1. Go to your vercel dashboard, https://vercel.com
+      2. Navigate to your project then Settings > Environment Variables
+      3. Add OAUTH_CLIENT_ID and set the value from the GitHub OAuth application
+      4. Add OAUTH_CLIENT_SECRET and set the value from the GitHub OAuth application
+      5. You can store them however you like but secrets should be the most secure
+      6. Make sure your environment variables are exposed on the deployment(s) you need
 
 ---
 
