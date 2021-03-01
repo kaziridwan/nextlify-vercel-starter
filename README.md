@@ -4,8 +4,15 @@ The goals of this project are:
 1. To create a zero-fee CMS template
 2. To be based off of completely opensource solutions, and no vendor lock-in
 
-# Where are we right now and what are the implications?
+# Quickstart
+1. deploy to vercel
+   1. [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+2. Configure the basics
+   1. netlify oauth
 
+---
+
+# Where are we right now and what are the implications?
 ## No fee
 We have been able to achieve a complete zero-fee system, with two lock-ins
 1. netlify identity
@@ -53,3 +60,4 @@ We have been able to achieve a complete zero-fee system, with two lock-ins
   - make a dockedrepo
   - make it a monorepo
 - move to gitlab
+- add tinacms
