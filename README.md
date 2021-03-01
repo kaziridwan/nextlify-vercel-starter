@@ -6,18 +6,21 @@ The goals of this project are:
 
 # Quickstart
 1. Deploy to vercel
-    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/kaziridwan/nextjs-netlifycms-starter)
+
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/kaziridwan/nextlify-vercel-starter)
+
 2. Copy your vercel app url from vercel dashboard, and github repo address
 3. Configure netlify-cms config
-      goto `public/admin/config.yml`
-        ```
-            backend:
-              name: github
-              repo: OWNER/YOUR_GITHUB_REPO
-              base_url: https://example.com/
-              auth_endpoint: api/auth
 
-        ```
+    goto `public/admin/config.yml`
+      ```
+          backend:
+            name: github
+            repo: OWNER/YOUR_GITHUB_REPO
+            base_url: https://example.com/
+            auth_endpoint: api/auth
+
+      ```
 4. [Set up netlify-cms oauth](https://www.npmjs.com/package/@openlab/vercel-netlify-cms-github)
    1. Create a GitHub OAuth application
       1. Go to https://github.com/settings/developers.
