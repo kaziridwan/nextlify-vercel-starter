@@ -1,3 +1,16 @@
 backend:
   name: github
-  repo: kaziridwan/nextjs-netlifycms-starter
+  repo: kaziridwan/nextjs-netlifycms-starter-20210302-045627
+  base_url: https://poc-20210302-045615.vercel.app/
+  auth_endpoint: api/auth
+  branch: main
+  public_folder: "/assets/uploads" 
+media_folder: "public/assets/uploads"
+media_library:
+  name: uploadcare
+collections:
+  - name: posts
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
